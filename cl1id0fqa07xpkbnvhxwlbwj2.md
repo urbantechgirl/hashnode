@@ -1,0 +1,57 @@
+## Custodial Vs Non-custodial Wallets
+
+The term "wallet" is used to describe hardware or software that holds cryptocurrencies. it allows users to store and retrieve their digital assets.
+
+
+ ### **There are two different types of cryptocurrency wallets**:
+
+- **Hardware wallets**
+
+- **Software wallets**
+
+### **All crypto wallets consist of two important components**:
+
+- **A Private key** 
+
+- **A Public key**
+
+
+
+![image.jpeg](https://cdn.hashnode.com/res/hashnode/image/upload/v1648934681903/dv_d2BPDd.jpeg)
+
+
+
+The two keys are used together, in order to send coins through the blockchain network, a user must first enter the public key and then confirm the transaction by entering the private key.
+
+
+## **CUSTODIAL WALLETS**:
+
+Custodial wallets are wallets offered by a centralized business such as a crypto exchange.
+In this wallet, private keys are held by a third party.
+This wallet has certain benefits such as less user responsibility regarding private key management. 
+This creates an extremely simple solution for the user but also creates an additional layer of risk.
+
+
+#### example of custodial wallet
+
+- Binance
+- Blockchain.com
+- Luno
+
+
+## **NON-CUSTODIAL WALLETS**:
+
+Non-custodial wallets do not require the outsourcing of trust to an institution, so no institution can refuse to complete transactions.
+in this wallet, the user controls the private key, information isn't stored on central server.
+However, misplaced private keys can be a costly mistake, the wallet will be lost forever.
+
+
+#### example of non-custodial wallet
+
+- Exodus
+- Electrum
+- Trust Wallet
+
+
+*Ultimately, there's no right and wrong way to store your assets. A beautiful feature of cryptocurrency is that each user has the choice to decide what works best for them.
+*
