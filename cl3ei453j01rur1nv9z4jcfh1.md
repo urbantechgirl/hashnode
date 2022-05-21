@@ -1,4 +1,4 @@
-## Cryptocurrency Tutorial Using METAMASK And REMIX IDE
+## How to make a Crypto Token Using METAMASK And REMIX IDE
 
 In this step-by-step tutorial, you will learn how to create and deploy an ERC-20 token on Ethereum.
 
