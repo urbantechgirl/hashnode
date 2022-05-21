@@ -15,18 +15,16 @@ ERC-20 defines a common list of rules for Ethereum tokens to follow within the l
  ### **Prerequisites**
 1. Download and installed Metamask.
 2. Select the Rinkeby Testnet network to work with
-3. Request some testnet ether on Rinkeby through any one of the following faucets:
+3. Request some testnet ether on Rinkeby through any one of this faucet:
 
 [  Metamask Faucet](https://faucet.metamask.io/)
 
-[Chainlink Faucet](https://faucets.chain.link/rinkeby)
 
-[Paradigm Faucet](https://faucet.paradigm.xyz/)
 
 *Once This is done, let's get started!*
 
 ## Writing the code
-We are using Remix IDE for writing the smart contract.
+We are using Remix IDE to write the smart contract.
 
 In Remix, create a new contract file, I named mine [ZQToken.sol](https://github.com/urbantechgirl/learnweb3.io/tree/main/ZQToken) - you can name it whatever you want!
 
@@ -53,12 +51,12 @@ This line specifies the compiler version of Solidity to be used.
 ```
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
 ```
-This line imports the ERC-20 token standard from OpenZeppelin (OZ). OZ is an Ethereum security company.  Whenever implementing a smart contract which needs to comply with a standard, try to find an OZ reference implementation rather than rewriting the entire standard from scratch.
+This line imports the ERC-20 token standard from OpenZeppelin (OZ). OZ is an Ethereum security company. 
 You can look at the implementation of ERC-20 standard contract if you want by following the link - https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol
 ```
 contract ZQToken is ERC20
 ```
-This specifies a new contract, named ZQToken, in our Solidity file. Also, it says that this contract is an instance of ERC20. ERC20 in this case refers to the standard contract we imported from OpenZeppelin.
+This specifies a new contract, named ZQToken, in our Solidity file. ERC20 in this case refers to the standard contract we imported from OpenZeppelin.
 ```
 {
     constructor(string memory _name, string memory _symbol) ERC20(_name, _symbol) {
