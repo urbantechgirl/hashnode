@@ -73,9 +73,8 @@ The ERC20 contract we imported from OpenZeppelin has its own constructor, which 
 
 Therefore, we are providing _name and _symbol variables to our contract, which we immediately pass on to the ERC20 constructor, thereby initializing the ERC20 smart contract.
 
-**mint** is an internal function within the ERC20 standard contract, which means that it can only be called by the contract itself. If you as the developer want to receive some tokens when you deploy this contract, we call the _mint function to mint some tokens to msg.sender.
-
-_mint takes two arguments - an address to mint to, and the amount of tokens to mint.
+**mint** This function sends an amount of newly created coins to another address.
+It takes two arguments, an address to mint to, and the amount of tokens to mint.
  10 * 10 ** 18 specifies that you want 10 full tokens to be minted to your address.
 
 *Note: 10 ** 18 (which is actually 10 ^ 18).*
