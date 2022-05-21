@@ -65,11 +65,11 @@ This specifies a new contract, named ZQToken, in our Solidity file. Also, it say
         _mint(msg.sender, 10 * 10 ** 18);
     }
 ```
-We created a constructor function that is called when the smart contract is first deployed. Within the constructor, there are two arguments from the user which specify the name and symbol of our cryptocurrency. E.g. name = Ethereum, symbol = ETH.
+We created a constructor function that is called when the smart contract is first deployed. Within the constructor, there are two arguments which specify the name and symbol of our cryptocurrency. E.g. name = ZQToken, symbol = ZQ.
 
-Immediately after specifying the constructor function, we call ERC20(_name, _symbol).
+After specifying the constructor function, we call ERC20(_name, _symbol).
 
-The ERC20 contract we imported from OpenZeppelin has its own constructor, which requires the name and symbol parameters. Since we are extending the ERC20 contract, we need to initialize the ERC20 contract when we deploy ours. So, as part of our constructor, we also need to call the constructor on the ERC20 contract.
+The ERC20 contract we imported from OpenZeppelin has its own constructor, which requires the name and symbol parameters. Since we are extending the ERC20 contract, we need to initialize the ERC20 contract when we deploy ours.
 
 Therefore, we are providing _name and _symbol variables to our contract, which we immediately pass on to the ERC20 constructor, thereby initializing the ERC20 smart contract.
 
