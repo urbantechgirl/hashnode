@@ -1,4 +1,4 @@
-## How to make a Crypto Token Using METAMASK And REMIX IDE
+## How to Create a Crypto Token Using METAMASK And REMIX IDE
 
 In this step-by-step tutorial, you will learn how to create and deploy an ERC-20 token on Ethereum.
 
@@ -13,7 +13,7 @@ An ERC20 token is a standard used for creating and issuing smart contracts on th
 ERC-20 defines a common list of rules for Ethereum tokens to follow within the larger Ethereum ecosystem, allowing developers to program how new tokens will function in this ecosystem. This also allows developers to accurately predict interaction between tokens. These rules include how the tokens are transferred between addresses and how data within each token is accessed. Most tokens on Ethereum comply with the ERC-20 specification. Following a standard like ERC-20 allows application developers which use ERC-20 tokens to easily support all ERC-20 tokens without having to write specialized code for them individually.
 
  ### **Prerequisites**
-1. Make sure you have downloaded and installed Metamask.
+1. Download and installed Metamask.
 2. Select the Rinkeby Testnet network to work with
 3. Request some testnet ether on Rinkeby through any one of the following faucets:
 
@@ -23,7 +23,7 @@ ERC-20 defines a common list of rules for Ethereum tokens to follow within the l
 
 [Paradigm Faucet](https://faucet.paradigm.xyz/)
 
-*Once you have set all of these up, let's get started!*
+*Once This is done, let's get started!*
 
 ## Writing the code
 We are using Remix IDE for writing the smart contract.
@@ -45,7 +45,7 @@ contract ZQToken is ERC20 {
 ```
 **it will look like this**
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1653052158259/LapRPSCc3.png align="left")
-Let's break it down line-by-line and understand what is going on:
+Let's break it down line-by-line for better understanding:
 ```
 pragma solidity ^0.8.0;
 ```
@@ -58,7 +58,7 @@ You can look at the implementation of ERC-20 standard contract if you want by fo
 ```
 contract ZQToken is ERC20
 ```
-This specifies a new contract, named LW3Token, in our Solidity file. Also, it says that this contract is an instance of ERC20. ERC20 in this case refers to the standard contract we imported from OpenZeppelin.
+This specifies a new contract, named ZQToken, in our Solidity file. Also, it says that this contract is an instance of ERC20. ERC20 in this case refers to the standard contract we imported from OpenZeppelin.
 ```
 {
     constructor(string memory _name, string memory _symbol) ERC20(_name, _symbol) {
@@ -73,13 +73,13 @@ The ERC20 contract we imported from OpenZeppelin has its own constructor, which 
 
 Therefore, we are providing _name and _symbol variables to our contract, which we immediately pass on to the ERC20 constructor, thereby initializing the ERC20 smart contract.
 
-**mint** is an internal function within the ERC20 standard contract, which means that it can only be called by the contract itself. Since you as the developer want to receive some tokens when you deploy this contract, we call the _mint function to mint some tokens to msg.sender.
+**mint** is an internal function within the ERC20 standard contract, which means that it can only be called by the contract itself. If you as the developer want to receive some tokens when you deploy this contract, we call the _mint function to mint some tokens to msg.sender.
 
 _mint takes two arguments - an address to mint to, and the amount of tokens to mint.
  10 * 10 ** 18 specifies that you want 10 full tokens to be minted to your address.
 
-*Note: You might be wondering why we did not just write '10' in the amount, instead of 10 ** 18 (which is actually 10 ^ 18).*
-ERC20 tokens by default work with 18 decimal places. So 1 full LW3Token in this case, is actually represented as 10 ^ 18. Therefore, to get 10 full LW3Tokens, we use 10 * 10 ** 18.
+*Note: 10 ** 18 (which is actually 10 ^ 18).*
+ERC20 tokens by default work with 18 decimal places. So 1 full ZQToken in this case, is actually represented as 10 ^ 18. Therefore, to get 10 full ZQTokens, we use 10 * 10 ** 18.
 
 ## Compiling
 
@@ -105,8 +105,9 @@ When deployed, the contract should show up under the Deployed Contracts section.
 
 **CONGRATS YOU'VE CREATED YOUR VERY OWN TOKEN!**
 
-## HOW TO VIEW Tokens in Metamask
 You may notice that even though you minted tokens to your address, they don't show up in Metamask.
+
+## How To View Tokens On Metamask
 
 
 - Copy your contract address
