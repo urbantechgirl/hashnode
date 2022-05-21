@@ -75,10 +75,19 @@ Therefore, we are providing _name and _symbol variables to our contract, which w
 It takes two arguments, an address to mint to, and the amount of tokens to mint.
 
 ```
- 10 * 10 ** 18 specifies that you want 10 full tokens to be minted to your address.
+ 10 * 10 ** 18 
 
-Note: 10 ** 18 (which is actually 10 ^ 18).
-ERC20 tokens by default work with 18 decimal places. So 1 full ZQToken in this case, is actually represented as 10 ^ 18. Therefore, to get 10 full ZQTokens, we use 10 * 10 **  18
+```
+specifies that you want 10 full tokens to be minted to your address.
+
+Note:
+``` 
+10 ** 18 
+```
+(which is actually 10 ^ 18).
+ERC20 tokens by default work with 18 decimal places. So 1 full ZQToken in this case, is actually represented as 10 ^ 18. Therefore, to get 10 full ZQTokens, we use 
+``` 
+10 * 10 **  18
 
 ```
 
